@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuizPulse Media Queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  background-color: lightyellow;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: purple;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 3px solid purple;
+  border-radius: 10px;
+}
+@media (min-width: 992px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body {
+    background-color: lightyellow;
+  }
+}
+@media (min-width: 601px) and (max-width: 991px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  body {
+    background-color: lightblue;
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  body {
+    background-color: lightpink;
+  }
+}
+</style>
+</head>
+<body>
+<h1>QuizPulse Quiz Gallery</h1>
+<div class="gallery">
+  <img src="PR08IMG1.png" alt="HTML Quiz">
+  <img src="PR08IMG2.png" alt="CSS Quiz">
+  <img src="PR08IMG3.png" alt="JS Quiz">
+  <img src="PR08IMG4.png" alt="Python Quiz">
+  <img src="PR08IMG5.png" alt="GK Quiz">
+  <img src="PR08IMG6.png" alt="Maths Quiz">
+</div>
+</body>
+</html>
